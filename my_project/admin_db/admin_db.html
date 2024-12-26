@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Leave Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar Menu -->
+        <div class="sidebar">
+            <div class="menu-item active">Dashboard</div>
+            <div class="menu-item">Employee Management</div>
+            <div class="menu-item">Attendance monitoring</div> 
+            <div class="menu-item">Reports & Analytics</div>
+            <div class="menu-item">Admin Attendance Records</div>
+            <div class="menu-item">admin leave request</div> 
+            <div class="menu-item">Notification</div> 
+            <div class="menu-item">Report</div> 
+            <div class="menu-item">Leave Settings</div>            
+            <div class="menu-item">profile</div>
+            <div class="menu-item">log out </div>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <h1>Admin Dashboard</h1>
+            
+            <!-- Dashboard Cards -->
+            <div class="dashboard-cards">
+                <div class="card">
+                    <h3>Pending Requests</h3>
+                    <p>New Leave Requests: 5</p>
+                    <p>Awaiting HOD Review: 3</p>
+                    <p>Awaiting Final Approval: 2</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Today's Attendance</h3>
+                    <p>Total Staff: 50</p>
+                    <p>Present: 45</p>
+                    <p>Absent: 3</p>
+                    <p>On Leave: 2</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Leave Statistics</h3>
+                    <p>Approved This Month: 15</p>
+                    <p>Rejected This Month: 3</p>
+                    <p>Total Leave Days Used: 45</p>
+                </div>
+            </div>
+
+            <!-- Recent Leave Requests -->
+            <div class="card">
+                <h3>Recent Leave Requests</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Employee ID</th>
+                            <th>Name</th>
+                            <th>Department</th>
+                            <th>Leave Type</th>
+                            <th>Duration</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>EMP001</td>
+                            <td>nabin pradhan</td>
+                            <td>Computer Science</td>
+                            <td>Sick Leave</td>
+                            <td>3 days</td>
+                            <td><span class="status status-pending">Pending</span></td>
+                            <td>
+                                <button class="btn btn-view">View</button>
+                                <button class="btn btn-approve">Approve</button>
+                                <button class="btn btn-reject">Reject</button>
+                              
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>EMP002</td>
+                            <td>rajan poudel</td>
+                            <td>Mathematics</td>
+                            <td>Festival Leave</td>
+                            <td>2 days</td>
+                            <td><span class="status status-approved">Approved</span></td>
+                            <td>
+                                <button class="btn btn-view">View</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>EMP003</td>
+                            <td>chandra prashad acharya</td>
+                            <td>DBMS</td>
+                            <td>sick leave</td>
+                            <td>2 days</td>
+                            <td><span class="status status-approved">Approved</span></td>
+                            <td>
+                                <button class="btn btn-view">View</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Employee Management -->
+            <div class="card">
+                <h3>Employee Management</h3>
+                <div class="form-group">
+                    <label>Search Employee</label>
+                    <input type="text" placeholder="Enter employee name or ID">
+                </div>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Department</th>
+                            <th>Role</th>
+                            <th>Leave Balance</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>EMP001</td>
+                            <td>nabin pradhan </td>
+                            <td>Computer Science</td>
+                            <td>Teaching Staff</td>
+                            <td>Sick: 10, Festival: 4, Casual: 5</td>
+                            <td>
+                                <button class="btn btn-view">Edit</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <a href="../login_pg/login.html/admin_db/admin_db.html">
+    <script src="script.js"></script>
+</body>
+</html>

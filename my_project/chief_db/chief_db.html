@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Chief Dashboard - Leave Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <div class="sidebar">
+            <div class="menu-item active">Campus Overview</div>
+            <div class="menu-item">Administrative Tools</div> 
+            <div class="menu-item">Department Reports</div>
+            <div class="menu-item">Leave Review</div> 
+            <div class="menu-item">Notification</div> 
+            <div class="menu-item">Faculty Management</div>
+            <div class="menu-item">Campus Statistics</div> 
+            <div class="menu-item">Attendance Overview</div> 
+            <div class="menu-item">Leave Policies</div>       
+            <div class="menu-item">profile</div>
+            <div class="menu-item">log out</div>
+        </div>
+
+        <div class="main-content">
+            <h1>Campus Chief Dashboard</h1>
+            
+            <div class="dashboard-cards">
+                <div class="card">
+                    <h3>Campus Overview</h3>
+                    <p>Total Departments: 8</p>
+                    <p>Total Faculty: 120</p>
+                    <p>On Leave Today: 10</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Leave Summary</h3>
+                    <p>Pending HOD Approvals: 15</p>
+                    <p>Awaiting Final Review: 8</p>
+                    <p>Processed Today: 12</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Department Status</h3>
+                    <p>Departments at Full Strength: 6</p>
+                    <p>Departments Needing Coverage: 2</p>
+                    <p>Critical Staffing Issues: 0</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Department-wise Leave Status</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Department</th>
+                            <th>Total Staff</th>
+                            <th>On Leave</th>
+                            <th>Pending Requests</th>
+                            <th>Coverage Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Computer Science</td>
+                            <td>25</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td><span class="status status-approved">Adequate</span></td>
+                            <td><button class="btn btn-view">View Details</button></td>
+                        </tr>
+                        <tr>
+                            <td>Mathematics</td>
+                            <td>20</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td><span class="status status-pending">Review Needed</span></td>
+                            <td><button class="btn btn-view">View Details</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card">
+                <h3>HOD Leave Requests</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Department</th>
+                            <th>HOD Name</th>
+                            <th>Leave Type</th>
+                            <th>Duration</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>BIT,BCA</td>
+                            <td>nabin shresth</td>
+                            <td>Emergency  Leave</td>
+                            <td>5 days</td>
+                            <td><span class="status status-pending">Pending</span></td>
+                            <td>
+                                <button class="btn btn-view">View</button>
+                                <button class="btn btn-approve">Approve</button>
+                                <button class="btn btn-reject">Reject</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <a href="../login_pg/login.html/Chief_db/Chief_db.html">
+    <script src="script.js"></script>
+</body>
+</html>

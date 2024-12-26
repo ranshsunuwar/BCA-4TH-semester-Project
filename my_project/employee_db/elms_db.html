@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Leave Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <div class="sidebar">
+            <div class="menu-item active">Dashboard</div>
+            <div class="menu-item">Attendance record</div>
+            <div class="menu-item">Leave request</div>
+            <div class="menu-item">Leave history</div>
+            <div class="menu-item">Notification</div>
+            <div class="menu-item">Reports</div>
+            <div class="menu-item">Setting</div>
+            <div class="menu-item">profile</div>
+            <div class="menu-item">log out</div>
+        </div>
+
+    
+          
+
+        <!-- Main Content Area -->
+        <div class="main-content employee-dashboard">
+            <h1>Employee Dashboard</h1>
+            
+            <!-- Dashboard Cards -->
+            <div class="dashboard-cards">
+                <div class="card">
+                    <h3>Leave Balance</h3>
+                    <p>Sick Leave: 10 days</p>
+                    <p>Festival Leave: 4 days</p>
+                    <p>Casual Leave: 5 days</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Attendance Summary</h3>
+                    <p>Present: 22 days</p>
+                    <p>Absent: 2 days</p>
+                    <p>On Leave: 1 day</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Pending Requests</h3>
+                    <p>Leave Requests: 1</p>
+                    <p>Status: Awaiting HOD Approval</p>
+                </div>
+            </div>
+
+            <!-- Leave Request Form -->
+            <div class="card">
+                <h3>Submit Leave Request</h3>
+                <form id="leaveRequestForm">
+                    <div class="form-group">
+                        <label>Leave Type</label>
+                        <select required>
+                            <option value="">Select Leave Type</option>
+                            <option value="sick">Sick Leave</option>
+                            <option value="festival">Festival Leave</option>
+                            <option value="casual">Casual Leave</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>From Date</label>
+                        <input type="date" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>To Date</label>
+                        <input type="date" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Reason</label>
+                        <textarea rows="4" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Submit Request</button>
+                </form>
+            </div>
+
+            <!-- Recent Attendance -->
+            <div class="card">
+                <h3>Recent Attendance</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th>In Time</th>
+                            <th>Out Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2024-01-15</td>
+                            <td><span class="status status-present">Present</span></td>
+                            <td>09:00 AM</td>
+                            <td>05:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>2024-01-14</td>
+                            <td><span class="status status-leave">Leave</span></td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>2024-01-13</td>
+                            <td><span class="status status-present">Present</span></td>
+                            <td>08:55 AM</td>
+                            <td>05:05 PM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <a href="../login_pg/login.html/employee_db/emls_db.html">
+    <script src="script.js"></script>
+</body>
+</html>
